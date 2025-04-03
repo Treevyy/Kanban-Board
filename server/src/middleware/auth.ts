@@ -11,7 +11,7 @@ export const authenticateToken = (
   next: NextFunction
 ) => {
   // TODO: verify the token exists and add the user data to the request object
-  const authHeader = req.headers.authoriztion;
+  const authHeader = req.headers.authorization;
 
   if (authHeader) {
     const token = authHeader.split(' ')[1];
